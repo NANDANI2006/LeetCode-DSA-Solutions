@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-long long maximumSubarraySum(vector& nums, int k) {
+long long maximumSubarraySum(vector<int>& nums, int k) {
 int n = nums.size();
 
     unordered_set<int> st;
