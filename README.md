@@ -34,3 +34,26 @@ I solved this problem using the **Sliding Window** technique and an `unordered_s
 
 ## Language
 C++
+
+
+### LeetCode 1004 – Max Consecutive Ones III
+
+**Topic:** Sliding Window | Two Pointers
+
+**Approach:**
+
+I solved this problem using the Sliding Window technique.
+
+1. Initialize two pointers, `left` and `right`, to maintain a window.
+2. Count the number of zeros inside the current window.
+3. Expand the window by moving `right`.
+4. If the number of zeros becomes greater than `k`, shrink the window by moving `left` until the zero count is valid.
+5. Update the maximum window length at every step.
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+**Key Learning:** Learned how to use the Sliding Window technique to find the longest valid subarray while maintaining a constraint.
+
+
