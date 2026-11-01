@@ -81,9 +81,6 @@ We use the Sliding Window technique to find the longest subarray containing at m
 - Calculate the answer using `i - l` because exactly one element must be deleted.
 - Update the maximum length at each step.
 
-### C++ Solution
-
-[View Solution – 1493_Longest_Subarray_of_1s_After_Deleting_One_Element.cpp](1493_Longest_Subarray_of_1s_After_Deleting_One_Element.cpp)
 
 ### Complexity Analysis
 
