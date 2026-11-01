@@ -57,3 +57,43 @@ I solved this problem using the Sliding Window technique.
 **Key Learning:** Learned how to use the Sliding Window technique to find the longest valid subarray while maintaining a constraint.
 
 
+## 1493. Longest Subarray of 1's After Deleting One Element
+
+**Difficulty:** Medium
+
+**Topic:** Sliding Window, Two Pointers
+
+**Language:** C++
+
+### Problem Description
+Given a binary array `nums`, you must delete exactly one element from it.
+
+Return the size of the longest non-empty subarray containing only `1`s in the resulting array.
+
+### Approach: Sliding Window
+
+We use the Sliding Window technique to find the longest subarray containing at most one zero.
+
+- Maintain two pointers: `l` (left) and `i` (right).
+- Count the number of zeros in the current window using `z`.
+- Expand the window by moving the right pointer.
+- If the window contains more than one zero, shrink it from the left until only one zero remains.
+- Calculate the answer using `i - l` because exactly one element must be deleted.
+- Update the maximum length at each step.
+
+### C++ Solution
+
+[View Solution – 1493_Longest_Subarray_of_1s_After_Deleting_One_Element.cpp](1493_Longest_Subarray_of_1s_After_Deleting_One_Element.cpp)
+
+### Complexity Analysis
+
+- **Time Complexity:** O(n) – Each element is visited at most twice.
+- **Space Complexity:** O(1) – Only a constant amount of extra space is used.
+
+### Key Learning
+
+Sliding Window helps efficiently find the longest valid subarray without using nested loops.
+
+**Important:** We use `i - l` instead of `i - l + 1` because exactly one element must be deleted.
+
+
